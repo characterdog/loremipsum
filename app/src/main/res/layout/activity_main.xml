@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/seekBar">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:padding="8dp"
+                  tools:text="@string/lorem"
+                  android:id="@+id/text"/>
+    </ScrollView>
+    <SeekBar
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="9"
+            android:progress="3"
+            android:id="@+id/seekBar"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/button_clipboard"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/textView_size"
+            android:layout_marginRight="8dp"/>
+    <TextView
+            tools:text="42"
+            android:minEms="2"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+            app:layout_constraintTop_toTopOf="@+id/seekBar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="@string/share"
+            android:drawableStart="@drawable/ic_share_gray_24dp"
+            android:drawableLeft="@drawable/ic_share_gray_24dp"
+            android:drawablePadding="4dp"
+            app:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_share" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="@string/copy_to_clipboard"
+            android:drawableStart="@drawable/ic_content_copy_gray_24dp"
+            android:drawableLeft="@drawable/ic_content_copy_gray_24dp"
+            android:drawablePadding="8dp"
+            app:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_clipboard" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@+id/button_share"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
