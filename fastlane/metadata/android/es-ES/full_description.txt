@@ -1,0 +1,10 @@
+"Lorem ipsum" is a common pseudo-Latin placeholder text used in print and web design.
+It's based on "De finibus bonorum et malorum" by Marcus Tullius Cicero.
+
+Why use this app:
+• Supports 10 to 10000 words
+• Material Design
+• No ads or tracking
+• Fully open source: https://github.com/characterdog/bmi-calculator
+
+Help translating this app: https://crowdin.com/project/characterdog-bmi-calculator
