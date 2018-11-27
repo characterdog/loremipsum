@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lorem ipsum</string>
+    <string name="app_name" translatable="false">Lorem ipsum</string>
     <string name="copy_to_clipboard">Copy to clipboard</string>
     <string name="share">Share</string>
     <string name="words">%d words</string>
