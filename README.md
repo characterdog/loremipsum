@@ -1,5 +1,5 @@
 # Lorem ipsum generator
-<a href="https://travis-ci.com/characterdog/loremipsum/"><img src="https://api.travis-ci.com/characterdog/loremipsum.svg?branch=master"></a> <a title="Crowdin" target="_blank" href="https://crowdin.com/project/loremipsum"><img src="https://d322cqt584bo4o.cloudfront.net/loremipsum/localized.svg"></a>
+<a href="https://travis-ci.com/characterdog/loremipsum/"><img src="https://api.travis-ci.com/characterdog/loremipsum.svg?branch=master"></a> <a title="Crowdin" target="_blank" href="https://crowdin.com/project/lorem-ipsum-generator"><img src="https://d322cqt584bo4o.cloudfront.net/lorem-ipsum-generator/localized.svg"></a>
 
 "Lorem ipsum" is a common pseudo-Latin placeholder text used in print and web design.
 It's based on "De finibus bonorum et malorum" by Marcus Tullius Cicero.
@@ -18,7 +18,7 @@ Why use this app:
 
 ## Translations
 
-Translations are managed via [Crowdin](https://crowdin.com/project/loremipsum). Translations need to be approved before I can merge them. Please do not hesitate to contact me via Crowdin or GitHub issue if you want to become proofreader or if you want to request a language.
+Translations are managed via [Crowdin](https://crowdin.com/project/lorem-ipsum-generator). Translations need to be approved before I can merge them. Please do not hesitate to contact me via Crowdin or GitHub issue if you want to become proofreader or if you want to request a language.
 
 ## License
 
