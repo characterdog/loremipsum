@@ -5,6 +5,6 @@ Why use this app:
 • Supports 10 to 10000 words
 • Material Design
 • No ads or tracking
-• Fully open source: https://github.com/characterdog/bmi-calculator
+• Fully open source: https://github.com/characterdog/loremipsum
 
-Help translating this app: https://crowdin.com/project/characterdog-bmi-calculator
+Help translating this app: https://crowdin.com/project/lorem-ipsum-generator
