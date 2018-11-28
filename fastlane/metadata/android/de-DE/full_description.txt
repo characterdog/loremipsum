@@ -1,4 +1,4 @@
-"Lorem ipsum" is a common pseudo-Latin placeholder text used in print and web design.
+"Lorem ipsum" is a commonly used pseudo-Latin placeholder text in print and web design.
 Es basiert auf "De finibus bonorum et malorum" von Marcus Tullius Cicero.
 
 Warum diese App nutzen:
