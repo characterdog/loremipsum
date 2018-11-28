@@ -1,1 +1,1 @@
-Easy and simple "Lorem ipsum" generator
+Einfacher und unkomplizierter "Lorem ipsum"-Generator
