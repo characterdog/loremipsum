@@ -1,7 +1,7 @@
 # Lorem ipsum generator
 <a href="https://travis-ci.com/characterdog/loremipsum/"><img src="https://api.travis-ci.com/characterdog/loremipsum.svg?branch=master"></a> <a title="Crowdin" target="_blank" href="https://crowdin.com/project/lorem-ipsum-generator"><img src="https://d322cqt584bo4o.cloudfront.net/lorem-ipsum-generator/localized.svg"></a>
 
-"Lorem ipsum" is a common pseudo-Latin placeholder text used in print and web design.
+"Lorem ipsum" is a commonly used pseudo-Latin placeholder text in print and web design.
 It's based on "De finibus bonorum et malorum" by Marcus Tullius Cicero.
 
 Why use this app:
