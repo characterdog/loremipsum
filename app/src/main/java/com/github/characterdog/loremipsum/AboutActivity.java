@@ -101,7 +101,7 @@ public class AboutActivity extends AppCompatActivity {
                     .setOnClickAction(new MaterialAboutItemOnClickAction() {
                         @Override
                         public void onClick() {
-                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://crowdin.com/project/share-my-number")); // todo
+                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://crowdin.com/project/lorem-ipsum-generator"));
                             startActivity(intent);
                         }
                     })
@@ -143,7 +143,7 @@ public class AboutActivity extends AppCompatActivity {
                     .setOnClickAction(new MaterialAboutItemOnClickAction() {
                         @Override
                         public void onClick() {
-                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/characterdog/share-my-number/blob/master/LICENSE")); // todo
+                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/characterdog/loremipsum/blob/master/LICENSE"));
                             startActivity(intent);
                         }
                     })
