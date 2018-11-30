@@ -1,0 +1,10 @@
+"Lorem ipsum" ist ein häufig verwendeter pseudo-lateinischer Platzhaltertext im Print- und Webdesign.
+Es basiert auf "De finibus bonorum et malorum" von Marcus Tullius Cicero.
+
+Warum diese App nutzen:
+• Unterstützt 10 bis 10000 Worte
+• Material Design
+• Keine Werbung oder Tracking
+• Vollständig Open Source: https://github.com/characterdog/loremipsum
+
+Hilf mit diese App zu übersetzen: https://crowdin.com/project/lorem-ipsum-generator
