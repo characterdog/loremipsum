@@ -171,6 +171,11 @@ public class AboutActivity extends AppCompatActivity {
                             "material-about-library", "2016", "Daniel Stone",
                             OpenSourceLicense.APACHE_2);
 
+            MaterialAboutCard colorLibraryLicenseCard = ConvenienceBuilder
+                    .createLicenseCard(activityContext, codeDrawable,
+                            "Material Color Palette Library", "2018", "CharacterDog",
+                            OpenSourceLicense.GNU_GPL_3);
+
             MaterialAboutCard toastyLicenseCard = ConvenienceBuilder
                     .createLicenseCard(activityContext, codeDrawable,
                             "Toasty", "2018", "Daniel Morales",
@@ -185,6 +190,7 @@ public class AboutActivity extends AppCompatActivity {
                     .addCard(firstCard.build())
                     .addCard(legalCard.build())
                     .addCard(materialAboutLibraryLicenseCard)
+                    .addCard(colorLibraryLicenseCard)
                     .addCard(toastyLicenseCard)
                     .addCard(iconLicenseCard)
                     .build();
