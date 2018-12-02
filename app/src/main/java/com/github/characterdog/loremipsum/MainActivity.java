@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         int timesFullLorem = size / NUMBER_WORDS_IN_LOREM_RES;
         StringBuilder lorem = new StringBuilder();
         for (int i = 0; i < timesFullLorem; i++) {
-            lorem.append(getString(R.string.lorem));
+            lorem.append(getString(R.string.lorem)).append(" ");
         }
         StringTokenizer stringTokenizer = new StringTokenizer(getString(R.string.lorem));
         for(int i = 0; i < size % NUMBER_WORDS_IN_LOREM_RES; i++) {
