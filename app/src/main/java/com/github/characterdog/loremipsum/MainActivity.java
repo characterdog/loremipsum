@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -51,29 +50,23 @@ public class MainActivity extends AppCompatActivity {
         });
         updateUI(sizeTextView, loremTextView, seekBar.getProgress());
 
-        shareButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent sendIntent = new Intent();
-                sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, loremTextView.getText());
-                sendIntent.setType("text/plain");
-                startActivity(sendIntent);
-            }
+        shareButton.setOnClickListener(v -> {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, loremTextView.getText());
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
         });
 
-        copyButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-                    ClipData clip = ClipData.newPlainText("Lorem ipsum", loremTextView.getText());
-                    clipboard.setPrimaryClip(clip);
-                    Toasty.success(getApplicationContext(), getString(R.string.copy_success)).show();
-                } catch (Exception e) {
-                    Log.e(TAG, "Error copying to clipboard", e);
-                    Toasty.error(getApplicationContext(), getString(R.string.copy_error)).show();
-                }
+        copyButton.setOnClickListener(v -> {
+            try {
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("Lorem ipsum", loremTextView.getText());
+                clipboard.setPrimaryClip(clip);
+                Toasty.success(getApplicationContext(), getString(R.string.copy_success)).show();
+            } catch (Exception e) {
+                Log.e(TAG, "Error copying to clipboard", e);
+                Toasty.error(getApplicationContext(), getString(R.string.copy_error)).show();
             }
         });
     }

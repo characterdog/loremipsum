@@ -17,7 +17,6 @@ import androidx.fragment.app.Fragment;
 import com.danielstone.materialaboutlibrary.ConvenienceBuilder;
 import com.danielstone.materialaboutlibrary.MaterialAboutFragment;
 import com.danielstone.materialaboutlibrary.items.MaterialAboutActionItem;
-import com.danielstone.materialaboutlibrary.items.MaterialAboutItemOnClickAction;
 import com.danielstone.materialaboutlibrary.items.MaterialAboutTitleItem;
 import com.danielstone.materialaboutlibrary.model.MaterialAboutCard;
 import com.danielstone.materialaboutlibrary.model.MaterialAboutList;
@@ -87,50 +86,38 @@ public class AboutActivity extends AppCompatActivity {
                     .text(activityContext.getString(R.string.author))
                     .subText("CharacterDog")
                     .icon(R.drawable.ic_person_gray_24dp)
-                    .setOnClickAction(new MaterialAboutItemOnClickAction() {
-                        @Override
-                        public void onClick() {
-                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/characterdog"));
-                            startActivity(intent);
-                        }
+                    .setOnClickAction(() -> {
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/characterdog"));
+                        startActivity(intent);
                     })
                     .build());
             firstCard.addItem(new MaterialAboutActionItem.Builder()
                     .text(activityContext.getString(R.string.help_translating_this_app))
                     .icon(R.drawable.ic_language_gray_24dp)
-                    .setOnClickAction(new MaterialAboutItemOnClickAction() {
-                        @Override
-                        public void onClick() {
-                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://crowdin.com/project/lorem-ipsum-generator"));
-                            startActivity(intent);
-                        }
+                    .setOnClickAction(() -> {
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://crowdin.com/project/lorem-ipsum-generator"));
+                        startActivity(intent);
                     })
                     .build());
             firstCard.addItem(new MaterialAboutActionItem.Builder()
                     .text(activityContext.getString(R.string.rate_in_play_store))
                     .icon(R.drawable.ic_star_gray_24dp)
-                    .setOnClickAction(new MaterialAboutItemOnClickAction() {
-                        @Override
-                        public void onClick() {
-                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(PLAY_STORE_LINK));
-                            startActivity(intent);
-                        }
+                    .setOnClickAction(() -> {
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(PLAY_STORE_LINK));
+                        startActivity(intent);
                     })
                     .build());
             firstCard.addItem(new MaterialAboutActionItem.Builder()
                     .text(activityContext.getString(R.string.share_with_friends))
                     .icon(R.drawable.ic_share_gray_24dp)
-                    .setOnClickAction(new MaterialAboutItemOnClickAction() {
-                        @Override
-                        public void onClick() {
-                            Intent sendIntent = new Intent();
-                            sendIntent.setAction(Intent.ACTION_SEND);
-                            sendIntent.putExtra(Intent.EXTRA_TEXT,
-                                    String.format(activityContext.getString(R.string.check_out),
-                                            getString(R.string.app_name), PLAY_STORE_LINK));
-                            sendIntent.setType("text/plain");
-                            startActivity(sendIntent);
-                        }
+                    .setOnClickAction(() -> {
+                        Intent sendIntent = new Intent();
+                        sendIntent.setAction(Intent.ACTION_SEND);
+                        sendIntent.putExtra(Intent.EXTRA_TEXT,
+                                String.format(activityContext.getString(R.string.check_out),
+                                        getString(R.string.app_name), PLAY_STORE_LINK));
+                        sendIntent.setType("text/plain");
+                        startActivity(sendIntent);
                     })
                     .build());
 
@@ -140,27 +127,21 @@ public class AboutActivity extends AppCompatActivity {
                     .text(activityContext.getString(R.string.license))
                     .subText("GNU General Public License v3.0")
                     .icon(R.drawable.ic_account_balance_gray_24dp)
-                    .setOnClickAction(new MaterialAboutItemOnClickAction() {
-                        @Override
-                        public void onClick() {
-                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/characterdog/loremipsum/blob/master/LICENSE"));
-                            startActivity(intent);
-                        }
+                    .setOnClickAction(() -> {
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/characterdog/loremipsum/blob/master/LICENSE"));
+                        startActivity(intent);
                     })
                     .build());
             legalCard.addItem(new MaterialAboutActionItem.Builder()
                     .text(activityContext.getString(R.string.privacy_policy))
                     .icon(R.drawable.ic_security_gray_24dp)
-                    .setOnClickAction(new MaterialAboutItemOnClickAction() {
-                        @Override
-                        public void onClick() {
-                            ShowPrivacyPolicyFragment f = new ShowPrivacyPolicyFragment();
-                            getActivity().getSupportFragmentManager()
-                                    .beginTransaction()
-                                    .replace(R.id.about_container, f)
-                                    .addToBackStack(null)
-                                    .commit();
-                        }
+                    .setOnClickAction(() -> {
+                        ShowPrivacyPolicyFragment f = new ShowPrivacyPolicyFragment();
+                        getActivity().getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.about_container, f)
+                                .addToBackStack(null)
+                                .commit();
                     })
                     .build());
 
