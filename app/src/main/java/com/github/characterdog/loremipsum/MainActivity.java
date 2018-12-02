@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
     void updateUI(TextView sizeTextView, TextView loremIpsumTextView, int progress) {
         int wordCount = getWordCount(progress);
-        sizeTextView.setText(getString(R.string.words, wordCount));
+        sizeTextView.setText(getResources().getQuantityString(R.plurals.words, wordCount, wordCount));
         loremIpsumTextView.setText(getLorem(wordCount));
     }
 
