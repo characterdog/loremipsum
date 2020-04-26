@@ -1,10 +1,10 @@
 "Lorem ipsum" is a commonly used pseudo-Latin placeholder text in print and web design.
 It's based on "De finibus bonorum et malorum" by Marcus Tullius Cicero.
 
-Why use this app:
+Bu uygulamayı neden kullanmalı:
 • Supports 10 to 10000 words
 • Material Design
-• No ads or tracking
-• Fully open source: https://github.com/characterdog/loremipsum
+• reklam veya izleme yok
+• Tamamen açık kaynaklı: https://github.com/characterdog/loremipsum
 
-Help translating this app: https://crowdin.com/project/lorem-ipsum-generator
+Bu uygulamanın çevirisine yardım et: https://crowdin.com/project/lorem-ipsum-generator

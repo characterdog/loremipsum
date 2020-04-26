@@ -3,7 +3,6 @@
 <resources>
     <string name="copy_to_clipboard">In Zwischenablage kopieren</string>
     <string name="share">Teilen</string>
-    <string name="words">%d Worte</string>
     <string name="copy_success">In die Zwischenablage kopiert!</string>
     <string name="copy_error">Fehler beim Kopieren in die Zwischenablage!</string>
     <string name="about">Über</string>
