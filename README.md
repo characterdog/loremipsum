@@ -1,3 +1,5 @@
+# This project currently receives little to no maintenance by myself. Feel free to fork it!
+
 # Lorem ipsum generator
 <a href="https://travis-ci.com/characterdog/loremipsum/"><img src="https://api.travis-ci.com/characterdog/loremipsum.svg?branch=master"></a> <a title="Crowdin" target="_blank" href="https://crowdin.com/project/lorem-ipsum-generator"><img src="https://d322cqt584bo4o.cloudfront.net/lorem-ipsum-generator/localized.svg"></a>
 
